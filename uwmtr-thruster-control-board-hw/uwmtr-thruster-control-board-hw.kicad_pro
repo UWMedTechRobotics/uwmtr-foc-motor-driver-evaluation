@@ -537,7 +537,7 @@
     "last_paths": {
       "idf": "",
       "netlist": "",
-      "plot": "uwmtr-thruster-control-board-hw-assembly/drills/",
+      "plot": "outputs/gerbers/",
       "specctra_dsn": "",
       "step": "uwmtr-thruster-control-board-hw-assembly/3d-models/uwmtr-thruster-control-board-hw.step",
       "vrml": ""
@@ -550,7 +550,7 @@
       "method": 0,
       "sort_order": 0
     },
-    "bom_export_filename": "uwmtr-thruster-control-board-hw-assembly/uwmtr-thruster-control-board-hw.csv",
+    "bom_export_filename": "outputs/bom/bom.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
@@ -569,29 +569,23 @@
           "group_by": false,
           "label": "Comment",
           "name": "Comment",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
           "label": "Designator",
           "name": "Designator",
-          "show": true
+          "show": false
         },
         {
-          "group_by": true,
-          "label": "Footprint",
-          "name": "Footprint",
-          "show": true
-        },
-        {
-          "group_by": true,
-          "label": "JLCPCB Part #",
-          "name": "JLCPCB Part #",
+          "group_by": false,
+          "label": "Comment",
+          "name": "Value",
           "show": true
         },
         {
           "group_by": false,
-          "label": "Reference",
+          "label": "Designator",
           "name": "Reference",
           "show": true
         },
@@ -599,13 +593,7 @@
           "group_by": false,
           "label": "Qty",
           "name": "${QUANTITY}",
-          "show": true
-        },
-        {
-          "group_by": true,
-          "label": "Value",
-          "name": "Value",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
@@ -638,21 +626,15 @@
           "show": false
         },
         {
-          "group_by": true,
+          "group_by": false,
           "label": "Datasheet",
           "name": "Datasheet",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
           "label": "Description",
           "name": "Description",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "LCSC",
-          "name": "LCSC",
           "show": false
         },
         {
@@ -663,9 +645,27 @@
         },
         {
           "group_by": false,
+          "label": "Footprint",
+          "name": "Footprint",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "LCSC",
+          "name": "LCSC",
+          "show": false
+        },
+        {
+          "group_by": false,
           "label": "MFR.Part #",
           "name": "MFR.Part #",
-          "show": false
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "JLCPCB Part #",
+          "name": "JLCPCB Part #",
+          "show": true
         }
       ],
       "filter_string": "",
@@ -673,7 +673,7 @@
       "include_excluded_from_bom": true,
       "name": "",
       "sort_asc": true,
-      "sort_field": "Value"
+      "sort_field": "MFR.Part #"
     },
     "bus_aliases": {},
     "connection_grid_size": 50.0,
